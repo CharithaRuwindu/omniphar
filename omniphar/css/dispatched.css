@@ -1,0 +1,33 @@
+.completebtn{
+    text-align: end;
+}
+button{
+    padding: 8px;
+    color: white;
+    background-color: #0751DF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    width: 25vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.record{
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    border: 2px solid;
+    margin-bottom: 5vh;
+}
+table{
+    padding-top: 5vh;
+    margin: auto;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+th{
+    width: 30%;
+    text-align: left;
+    padding-left: 10%;
+}
