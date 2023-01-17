@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2023 at 07:00 PM
+-- Generation Time: Jan 17, 2023 at 07:36 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -261,6 +261,33 @@ CREATE TABLE `pharmacist_requests` (
 
 INSERT INTO `pharmacist_requests` (`First_name`, `Last_name`, `Address`, `Contact_no`, `Email`, `Password`) VALUES
 ('erer', 'ere', 'rer', '071417192', 'charitharuwdu@gmail.com', '123');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` varchar(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(25) NOT NULL,
+  `firstname` varchar(30) NOT NULL,
+  `lastname` varchar(30) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `contact` varchar(10) NOT NULL,
+  `role` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `email`, `password`, `firstname`, `lastname`, `address`, `contact`, `role`) VALUES
+('1', 'charitha@gmail.com', '123', 'charitha', 'ruwindu', '77/1, Newtown, Ratnapura', '0711112223', 'admin'),
+('2', 'dew@gmail.com', '1234', 'dew', 'savindrani', '23/4 elapatha, ratnapura', '0778889990', 'customer'),
+('3', 'hiro@gmail.com', '2222', 'hiro', 'ovitigala', '23/6 gampaha', '0456667778', 'delivery_person'),
+('4', 'theek@gmail.com', '3333', 'theekshani', 'buddhima', '87/4 nelligala', '0763334446', 'pharmacist');
 
 --
 -- Indexes for dumped tables
