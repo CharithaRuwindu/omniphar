@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Navbar - Tivotal</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="https://kit.fontawesome.com/2816eb5ad3.js" crossorigin="anonymous"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-bar">
+          <div class="logo-container">
+              <img src="omniphar.jpeg" alt="logo" class="logo">
+          </div>
+          <div class="search-container">
+              <form action="" class="search-form">
+                  <input type="text" placeholder="Search for items" class="search-box">
+                  <button type="submit" class="lens"><i class="fa fa-search"></i></button>
+              </form>
+          </div>
+          <div class="icon-container">
+              <table>
+                  <tr>
+                      <td><p> <b>Log out</b></p></td>
+    <td> <i class="fa-sharp fa-solid fa-comments"></i></td>
+                      <td> <i class="far fa-user-circle"></i></td>
+                  </tr>
+              </table>
+      </div>
+  </header><br>
+
+
+
+
+
+    <section class="sidebar">
+      <div class="nav-header">
+        <p class="logo">Dashboard</p>
+        <i class="bx bx-menu-alt-right btn-menu"></i>
+      </div>
+      <ul class="nav-links">
+        
+        <li>
+          <a href="#">
+            <i class='bx bx-plus-medical'></i>            
+            <span class="title">Pharmacies</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-user'></i>            
+            <span class="title">Customers</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-truck'></i>            
+            <span class="title">Delivery persons</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-package'></i>            
+            <span class="title">Orders</span>
+          </a>
+        </li>
+      </ul>
+      
+    </section>
+    <section class="home">
+      <div class="div1">
+        <div>
+            <h1>OMNIphar</h1>
+            <h4 style="color: rgb(115, 116, 117);">Pharmacies</h4>
+        </div>
+        <button class="addcstmrbtn">Register a new pharmacy </button>
+
+        <br><br><br>
+      
+
+
+          <div class="mytbl">
+            <div class="item1">&nbsp P001</div>
+            <div class="item2">&nbsp C&S Pharmacy</div>
+          </div>
+
+          <div class="mytbl">
+            <div class="item1">&nbsp P001</div>
+            <div class="item2">&nbsp C&S Pharmacy</div>
+          </div>
+
+          <div class="mytbl">
+            <div class="item1">&nbsp P001</div>
+            <div class="item2">&nbsp C&S Pharmacy</div>
+          </div>
+
+
+    </section>
+
+    <script>
+      const btn_menu = document.querySelector(".btn-menu");
+      const side_bar = document.querySelector(".sidebar");
+
+      btn_menu.addEventListener("click", function () {
+        side_bar.classList.toggle("expand");
+        changebtn();
+      });
+
+      function changebtn() {
+        if (side_bar.classList.contains("expand")) {
+          btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else {
+          btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+      }
+    </script>
+    
+  </body>
+</html>

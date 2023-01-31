@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Navbar - Tivotal</title>
+    <link rel="stylesheet" href="delivery_persons.css" />
+    <script src="https://kit.fontawesome.com/2816eb5ad3.js" crossorigin="anonymous"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-bar">
+          <div class="logo-container">
+              <img src="omniphar.jpeg" alt="logo" class="logo">
+          </div>
+          <div class="search-container">
+              <form action="" class="search-form">
+                  <input type="text" placeholder="Search for items" class="search-box">
+                  <button type="submit" class="lens"><i class="fa fa-search"></i></button>
+              </form>
+          </div>
+          <div class="icon-container">
+              <table>
+                  <tr>
+                      <td><p> <b>Log out</b></p></td>
+    <td> <i class="fa-sharp fa-solid fa-comments"></i></td>
+                      <td> <i class="far fa-user-circle"></i></td>
+                  </tr>
+              </table>
+      </div>
+  </header><br>
+
+
+
+
+
+    <section class="sidebar">
+      <div class="nav-header">
+        <p class="logo">Dashboard</p>
+        <i class="bx bx-menu-alt-right btn-menu"></i>
+      </div>
+      <ul class="nav-links">
+        
+        <li>
+          <a href="#">
+            <i class='bx bx-plus-medical'></i>            
+            <span class="title">Pharmacies</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-user'></i>            
+            <span class="title">Customers</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-truck'></i>            
+            <span class="title">Delivery persons</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-package'></i>            
+            <span class="title">Orders</span>
+          </a>
+        </li>
+      </ul>
+      
+    </section>
+    <section class="home">
+      <div class="div1">
+        <div>
+            <h1>OMNIphar</h1>
+            <h4 style="color: rgb(115, 116, 117);">Delivery Persons</h4>
+        </div>
+        <button class="addcstmrbtn">Go to deliveryperson requests</button><br>
+        <button class="addcstmrbtn">Add a new deliveryperson</button>
+
+        <br><br>
+
+       <table class="mytbl">
+          <tr>
+            <th>Deliveryperson ID</th>
+            <th>Name</th>
+            <th>Vehicle Number</th>
+            <th>Contacts</th>
+            <th></th>
+          </tr>
+          <tbody>
+            <tr>
+              <td>D001</td>
+              <td>Hiroshini Ovitigala</td>
+              <td>ABC5248</td>
+              <td>0765607373</td>
+              <td><center><button class="button1">Go to Profile</button></center></td>
+            </tr>
+
+            <tr>
+              <td>D001</td>
+              <td>Hiroshini Ovitigala</td>
+              <td>ABC5248</td>
+              <td>0765607373</td>
+              <td><center><button class="button1">Go to Profile</button></center></td>
+            </tr>
+            <tr>
+              <td>D001</td>
+              <td>Hiroshini Ovitigala</td>
+              <td>ABC5248</td>
+              <td>0765607373</td>
+              <td><center><button class="button1">Go to Profile</button></center></td>
+            </tr>
+           
+          </tbody>
+       </table>
+
+       
+    </section>
+
+    <script>
+      const btn_menu = document.querySelector(".btn-menu");
+      const side_bar = document.querySelector(".sidebar");
+
+      btn_menu.addEventListener("click", function () {
+        side_bar.classList.toggle("expand");
+        changebtn();
+      });
+
+      function changebtn() {
+        if (side_bar.classList.contains("expand")) {
+          btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else {
+          btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+      }
+    </script>
+  </body>
+</html>
+<!-- HTML !-->
+<button class="button-56" role="button">Button 56</button>
+
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
