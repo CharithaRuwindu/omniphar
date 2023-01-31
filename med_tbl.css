@@ -1,0 +1,123 @@
+/* Navbar-----------------------------------------------------*/
+
+* {box-sizing: border-box;}
+
+/* Style the navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #03375f;
+}
+  
+  /* Style the input container */
+  .topnav .search-container {
+    height:75px;
+    top:50%;
+  }
+
+  .topnav .search-container .logo {
+    float:left;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container .back {
+    float:left;
+    height: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .topnav .search-container .user {
+    float:right;
+    height: 15px;
+    margin-top: 20px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style the button inside the input container */
+  .topnav .search-container button {
+    float: right;
+    padding: 8px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 16px;
+    background:rgb(209, 223, 233);
+    color:  #03375f;
+    font-size: 14px;
+    font-family:"Monaco" , "Lucida Console", "Courier New", monospace;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+/*table--------------------------------------------------------------------*/
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 50px;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-family:"Poppins","Monaco" , "Lucida Console", "Courier New", monospace;
+  }
+  
+  .table th{
+    text-align: justify;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .table td {
+    text-align: justify;
+    padding: 16px;
+    font-size: 13px;
+  }
+
+  .table tr{
+    height: 50px;
+  }
+
+  .table tr:nth-child(even) {
+    background-color: #c0dbeb;
+  }
+
+  .title{
+    padding: 8px;
+    margin-top: 2px;
+    }
+  
+  .title h1{
+    color:#03375f;
+    font-family:"Monaco" , "Lucida Console", "Courier New", monospace;
+    float: left;
+    }  
+  
+  /*medicine button--------------------------------------*/
+  
+  .title .med-button {
+  border-radius: 5px;
+  float: right;
+  border:none;
+  height: 50px;
+  width:180px;
+  background-color: #03375f;
+  color: white;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 4px;
+  cursor: pointer;
+  }
+  
+  .med-button a{
+  color: white;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+  font-size: 14px;
+  }

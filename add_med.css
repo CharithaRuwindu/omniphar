@@ -1,0 +1,175 @@
+.body{
+  font-family:"Monaco" ,"Lucida Console", "Courier New", monospace;
+    background-image: url('pharmacy1.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+    background-size: 50% 100% ;
+    background-position: 50px 85px;
+    margin: 10px;
+
+  }
+
+/* Style the navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #03375f;
+}
+  
+  /* Style the input container */
+  .topnav .search-container {
+    height:75px;
+    top:50%;
+  }
+
+  .topnav .search-container .logo {
+    float:left;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container .back {
+    float:left;
+    height: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .topnav .search-container .user {
+    float:right;
+    height: 15px;
+    margin-top: 20px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style the button inside the input container */
+  .topnav .search-container button {
+    float: right;
+    padding: 8px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 16px;
+    background:rgb(209, 223, 233);
+    color:  #03375f;
+    font-size: 14px;
+    font-family:"Monaco" , "Lucida Console", "Courier New", monospace;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+/*form-----------------------------------------------------------------*/
+
+.form input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #03375f;
+  }
+
+  .form input[type=file]{
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #03375f;
+  }
+
+  .form textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+  }
+
+  .form input[type=submit],input[type=button],input[type=file] {
+    width: 20%;
+    background-color: #076794;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family:"Monaco" , "Lucida Console", "Courier New", monospace;
+    float: right;
+  }
+  
+  .form input[type=submit]:hover,input[type=button]:hover {
+    background-color: #087bb1;
+    color: #03375f;
+  }
+
+  .form{
+    width: 100%;
+    color: #03375f;
+    display: flex;
+    margin-right: 15px;
+    flex-direction: row;
+    font-family:"Monaco" , "Lucida Console", "Courier New", monospace;
+  }
+  
+  .form .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: auto;
+    width:100%;
+  }
+
+  .form .image{
+    float: right;
+    width: 2000px;
+    height: 500px;
+  }
+
+  .title{
+    padding: 8px;
+    margin-top: 2px;
+    }
+
+  .title h1{
+    color:#03375f;
+    font-family:"Monaco" , "Lucida Console", "Courier New", monospace;
+    float: left;
+    }  
+  
+  /*medicine button--------------------------------------*/
+
+.title .med-button {
+  border-radius: 5px;
+  float: right;
+  border:none;
+  height: 50px;
+  width:180px;
+  background-color: #03375f;
+  color: white;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 4px;
+  cursor: pointer;
+}
+
+.med-button a{
+color: white;
+text-align: center;
+padding: 40px 40px;
+text-decoration: none;
+font-size: 14px;
+}
+
