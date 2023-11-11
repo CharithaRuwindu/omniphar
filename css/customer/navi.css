@@ -1,0 +1,44 @@
+
+body{
+    margin: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.leftnavi{
+    padding-top: 5%;
+    background-color: #b9b9b9;
+    width: 230px;
+    height:400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 0%;
+    
+}
+
+.leftnavi h3{
+    padding-top: 20px;
+    padding-left: 73px;
+}
+
+.sub{
+    padding-top: 5px;
+}
+
+.sub li{
+    list-style: none;
+}
+
+.navibtn{
+    width: 150px;
+    height: 35px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1.8px 1.8px #a8a8a8;
+    background-color: #9e9e9e;
+}
+
+.navibtn:hover{
+    background-color: #e1e1e1;
+}

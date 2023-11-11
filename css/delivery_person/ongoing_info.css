@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body{
+    margin: 0%;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 65px;
+    left: 78px;
+    transition: var(--transition);
+    overflow: scroll;
+}
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    left: 250px;
+    transition: var(--transition);
+}
+.order_details{
+    font-weight: 500;
+    margin: 5% 5%;
+}
+.route, .cancel{
+    cursor: pointer;
+    margin-left: 80%;
+    width: 10%;
+    height: 30px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 #bbbbbb;
+}
+.route{
+    background-color: #FFB13C;
+    margin-top: 10px;
+}
+.cancel{
+    background-color: #ed202a;
+}
+.route:hover, .cancel:hover{
+    box-shadow: 0 4px 4px 0 #bbbbbb;
+}
+.route a{
+    text-decoration: none;
+    color: white;
+}
+.item_topic{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+}
+.item_detail{
+    margin-left: 8%;
+    margin-top: 2%;
+    width: 73%;
+    border: 2px solid;
+}
+.item_img{
+    height: 20vh;
+}

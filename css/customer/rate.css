@@ -1,0 +1,244 @@
+body{
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    --transition: all 0.2s ease;
+}
+
+.content{
+    margin-left: 200px;
+    padding-top: 100px;
+}
+
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    margin-left: 280px;
+    transition: var(--transition);
+}
+
+.topic h3{
+    color: #141279;
+    font-size: 19px;
+}
+.div_rating {
+    width: 500px;
+    background:#d9d9d9;
+    padding:30px 20px 25px 20px;
+    border: 1px solid #c3c3c3;
+    box-shadow: 1.5px 1.5px #757373;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.div_rating .post{
+    display: none;
+}
+
+.div_rating .text{
+     font-size: 16px;
+     color: #0000;
+     font-weight: 500;
+}
+
+.div_rating .star-widget input {
+    display:none;
+}
+
+.star-widget label{
+    font-size: 28px;
+    color: #a5a5a5;
+    color: #444;
+    padding: 28px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~label {
+    color: #d5b318;
+}
+
+input:checked ~ label{
+    color:  #d5b318;
+}
+input#rate-5:checked ~ label{
+    color:  #d5b318;
+    text-shadow: 0 0 10px #ddc52a;
+}
+
+#rate-1:checked ~ .hidden_area p:before{
+    content: "Just hate it ";
+}
+
+#rate-2:checked ~ .hidden_area p:before{
+    content: "Don't like it ";
+}
+
+#rate-3:checked ~ .hidden_area p:before{
+    content: " Awesome ";
+}
+
+
+#rate-4:checked ~ .hidden_area p:before{
+    content: " Like it ";
+}
+
+#rate-5:checked ~ .hidden_area p:before{
+    content: " Love it ";
+}
+
+.div_rating .hidden_area{
+    display: none;
+}
+
+input:checked ~ .hidden_area{
+    display: block;
+}
+
+.hidden_area p{
+    width: 100%;
+    font-size: 17px;
+    color: #141279 ;
+    font-weight: 500;
+    margin: 5px 0 20px 19;
+    text-align: center;
+    transition: all 0.2s ease;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.hidden_area .textarea{
+    height: 100px;
+    width: 100%;
+    padding-top: 15px;
+    /* overflow: hidden; */
+}
+
+.hidden_area .textarea textarea{
+    height: 140%;
+    width: 100%;
+    outline:none;
+    border: 1px solid #c3c3c3;
+    background:  #c2c2c2;
+    padding: 10px;
+    font-size: 15px;
+    color: #000000;
+    resize: none;
+}
+
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0 ;
+    margin-top: 50px;
+}
+
+form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #141279;
+    color:  #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase ;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+
+form .btn button:hover{
+    background-color:  #141279ec;
+    color: #dedede;
+    transform: scale(1.04);
+}
+
+
+/* new one */
+
+.topicn h3{
+    color: #141279;
+    font-size: 19px;
+    padding-top: 80px;
+}
+
+input#rate-10:checked ~ label{
+    color:  #b59b31;
+    text-shadow: 0 0 10px #ddc52a;
+}
+
+#rate-6:checked ~ .hidden_arean p:before{
+    content: "Just hate it ";
+}
+
+#rate-7:checked ~ .hidden_arean p:before{
+    content: "Don't like it ";
+}
+
+#rate-8:checked ~ .hidden_arean p:before{
+    content: " Awesome ";
+}
+
+
+#rate-9:checked ~ .hidden_arean p:before{
+    content: " Like it ";
+}
+
+#rate-10:checked ~ .hidden_arean p:before{
+    content: " Love it ";
+}
+
+.hidden_arean p{
+    width: 100%;
+    font-size: 17px;
+    color: #141279 ;
+    font-weight: 500;
+    margin: 10px 0 20px 19px;
+    text-align: center;
+    transition: all 0.2s ease;
+    padding-top: 10px;
+}
+
+.hidden_arean .textarea{
+    height: 100px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.hidden_arean .textarea textarea{
+    height: 140%;
+    width: 100%;
+    outline:none;
+    border: 1px solid #c3c3c3;
+    background:  #c2c2c2;
+    padding: 10px;
+    font-size: 15px;
+    color: #000000;
+    resize: none;
+}
+
+.div_rating .hidden_arean{
+    display: none;
+}
+
+input:checked ~ .hidden_arean{
+    display: block;
+}
+
+.rateimg{
+        width: 70%;
+        float: right;
+        height: auto; 
+        margin-left: 50%; 
+        /* position: fixed;
+       
+        margin-top: -15%; */
+        z-index: -2;
+
+}

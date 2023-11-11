@@ -1,0 +1,49 @@
+body{
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    --transition: all 0.2s ease;
+}
+
+.content{
+    margin-left: 78px;
+}
+
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    margin-left: 280px;
+    transition: var(--transition);
+}
+
+.lside{
+    float: left;
+    padding-left: 25px;
+}
+
+iframe{
+    width: 90%;
+    margin-right: 8%;
+    padding-top: 10%;
+}
+
+.riderdetails{
+    margin-left: 6%;
+}
+
+.riderdetails h2{
+    margin-top: 13%;
+    padding-bottom: 1.5%;
+
+}
+.riderdetails h4{
+    padding-bottom: 0.9%;
+}
+.riderimg{
+    width: 75%;
+}
+
+.ridertbl tr td {
+    width: 50%;
+}

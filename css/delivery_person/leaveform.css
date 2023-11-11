@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body{
+    margin: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 65px;
+    left: 78px;
+    transition: var(--transition);
+    overflow: scroll;
+}
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    left: 250px;
+    transition: var(--transition);
+}
+.topic{
+    float: left;
+    margin-top: 4%;
+    margin-left: 9%;
+    position: absolute;
+}
+.leave_history{
+    margin-top: 5%;
+    margin-left: 82%;
+    height: 30px;
+    width: 120px;
+    font-weight: bold;
+    background-color: #FFB13C;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0px #bbbbbb;
+    cursor: pointer;
+}
+.leave_history:hover{
+    background-color: #fa9e13;
+    transform: translateY(2px);
+    transition: 0.1s ease-out;
+}
+
+.leave_form{
+    border-radius: 1%;
+    margin-top: 2%;
+    margin-left: 30%;
+    background-color: #dddddd;
+    width: 60%;
+    height: 80vh;
+    box-shadow: 0 2px 2px 0 #bbbbbb;
+}
+.fill input, .fill textarea{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.reason2{
+    height: 100px;
+    width: 90%;
+}
+.leave_pic{
+    margin-top: 8%;
+    width: 30%;
+    float: left;
+}
+.statement1{
+    margin-left: 4%;
+    padding-top: 3%;
+    font-size: large;
+}
+.from, .to, .reason, .proof, .choose{
+    margin-left: 4%;
+}
+.to{
+    margin-left: 45%;
+}
+.reason2{
+    margin-left: 4%;
+    height: 90px;
+    width: 600px;
+}
+.submit{
+    margin-left: 80%;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #002B5B;
+    background-color: #002B5B;
+    color: white;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: #034c9f;
+}

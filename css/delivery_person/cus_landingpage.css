@@ -1,0 +1,139 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+h3 {
+    color: #ffff;
+    padding-left: 200px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    
+}
+
+h4 {
+    color: #ffff;
+    padding-left: 200px;
+    padding-bottom: 20px;
+  
+}
+
+i {
+    font-size: 20px;
+    color: #010101;
+    cursor: pointer;
+}
+
+li {
+    display: inline-block;
+    width: 50px;
+}
+
+.divtopblue{
+    height: 10px;
+    width: 100%;
+    background-color: #2165B6;
+
+}
+
+.logo {
+    float: right;
+    width: 120px;
+    height: 120px;
+}
+
+
+
+.divtopsecond {
+    width: 92%;
+    height: 60px;
+    background-color: #2F9BCF;
+}
+
+.searchbar {
+    padding-top:15px;
+    margin-left: 600px;
+}
+
+.input{
+    padding-left: 15px;
+    width: 250px;
+    height: 30px;
+    border-radius: 40px;
+    border: none;
+}
+
+.item{
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 180px;
+    transform: translate(-50%, -50%);
+    background-color: #D4E6F0;
+    height: 300px;
+    width: 180px;
+    border-radius: 30px;
+    box-shadow: 3px 3px #D3D3D3;
+    
+}
+
+.item2{
+    text-align: center;
+    margin-top: 75px;
+    margin-left: 180px;
+    transform: translate(-50%, -50%);
+    background-color: #D4E6F0;
+    height: 300px;
+    width: 180px;
+    border-radius: 30px;
+    box-shadow: 3px 3px #D3D3D3;
+    
+}
+
+.dropdown {
+    height: 40px;
+    background-color: #D4E6F0;
+    width: 92%;
+}
+
+.tddrop{
+    width: 280px;
+    padding-left: 100px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+button{
+    background-color:#2165B6;
+    color: #ffff;
+    border-radius: 40px;
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.medimage{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.medletter{
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+/* footer*/
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #2F9BCF;
+    position: relative;
+}

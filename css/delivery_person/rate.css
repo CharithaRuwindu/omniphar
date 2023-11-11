@@ -1,0 +1,170 @@
+body{
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    --transition: all 0.2s ease;
+}
+
+.content{
+    margin-left: 150px;
+    padding-top: 120px;
+}
+
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    margin-left: 280px;
+    transition: var(--transition);
+}
+
+.topic h3{
+    color: #141279;
+}
+.div_rating {
+    width: 500px;
+    background:#d9d9d9;
+    padding: 20px;
+    border: 1px solid #c3c3c3;
+    box-shadow: 1.5px 1.5px #757373;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.div_rating .post{
+    display: none;
+}
+
+.div_rating .text{
+     font-size: 16px;
+     color: #0000;
+     font-weight: 500;
+}
+
+.div_rating .star-widget input {
+    display:none;
+}
+
+.star-widget label{
+    font-size: 25px;
+    color: #a5a5a5;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~label {
+    color: #d5b318;
+}
+
+input:checked ~ label{
+    color:  #d5b318;
+}
+input#rate-5:checked ~ label{
+    color:  #d5b318;
+    text-shadow: 0 0 10px #952;
+}
+
+#rate-1:checked ~ form header:before{
+    content: "Just hate it ";
+}
+
+#rate-2:checked ~ form header:before{
+    content: "Don't like it ";
+}
+
+#rate-3:checked ~ form header:before{
+    content: " Awesome ";
+}
+
+#rate-4:checked ~ form header:before{
+    content: " Like it ";
+}
+
+#rate-5:checked ~ form header:before{
+    content: " Love it ";
+}
+
+.div_rating .textarea{
+    display: none;
+}
+
+input:checked ~ .textarea{
+    display: block;
+}
+.div_rating .btn{
+    display: none;
+}
+
+input:checked ~ .btn{
+    display: block;
+}
+
+/* form header{
+    display: none;
+}
+
+input:checked ~ header{
+    display: block;
+} */
+
+form header{
+    width: 100%;
+    font-size: 17px;
+    color: 2px solid #141279 ;
+    font-weight: 500;
+    margin: 10px 0 40px 10;
+    text-align: center;
+    transition: all 0.2s ease;
+    padding-top: 10px;
+}
+
+form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline:none;
+    border: 1px solid #c3c3c3;
+    background:  #c2c2c2;
+    padding: 10px;
+    font-size: 15px;
+    color: #000000;
+    resize: none;
+}
+
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #141279;
+    color:  #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase ;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+
+form .btn button:hover{
+    background-color:  #141279ec;
+    color: #dedede;
+    transform: scale(1.01);
+}

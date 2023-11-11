@@ -1,0 +1,31 @@
+#rate-1:checked ~ .whats:before{
+    content: "Just hate it ";
+}
+
+#rate-2:checked ~ .whats:before{
+    content: "Don't like it ";
+}
+
+#rate-3:checked ~ .whats:before{
+    content: " Awesome ";
+}
+
+#rate-4:checked ~ .whats:before{
+    content: " Like it ";
+}
+
+#rate-5:checked ~ .whats:before{
+    content: " Love it ";
+}
+
+.whats, .textarea, .btn {
+  display: none; /* Show header, textarea, and button when radio button is checked */
+}
+
+
+
+input[type="radio"]:checked ~ .whats,
+input[type="radio"]:checked ~ .textarea,
+input[type="radio"]:checked ~ .btn {
+  display: block; /* Show header, textarea, and button when radio button is checked */
+}
