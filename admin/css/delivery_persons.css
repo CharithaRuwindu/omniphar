@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  --color-hover: #002B5B;
+  --transition: all 0.2s ease;
+}
+.home {
+  position: fixed;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  height: 100vh;
+  margin-top: 4%;
+  background: #ffffff;
+  z-index: 6;
+  transition: var(--transition);
+  overflow-y: scroll;
+}
+
+.div1{
+  margin-top: 45px;
+  margin-left: 70px;
+  width: 95%;
+  height: 100%;
+}
+
+.mytbl{
+  background-color: #ffffff;
+  border: 2px;
+  width: 90%;
+  font-size: 12px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.mytbl tr{
+  background-color: #A9C6E4 ;
+}
+
+.mytbl th {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+  background-color: #145DA0 ;
+  color: white;
+}
+
+.mytbl td, .mytbl th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.iconcls{
+  float:right;
+}
+
+.a1 {
+  text-decoration: none;
+  color: #070be5;
+}
+
+.a1:hover{
+color: #040698;
+}
+
+.a2 {
+text-decoration: none;
+color: #b60404;
+}
+
+.a2:hover{
+color: #7d0202;
+}
+
+.addcstmrbtn{
+  margin-left: 70%;
+  align-items: center;
+    width: 25%;
+    height: 4.5%;
+    font-size: 15px;
+    background-color: #141279;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+    cursor: pointer;
+    margin-bottom: 1%;
+  /* margin-left: 70%;
+  width: 18%;
+  align-items: center;
+  background-color:  #60A3D9;
+  border: 0px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  height: 35px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 15px; */
+
+}
+
+
+.addcstmrbtn:hover {
+  background-color: #141279e1;
+    color: #dedede;
+}
+
+/* ........................................... */
+
+
+
+  
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+  
+
+    
+    button {
+    padding: 10px 5px;
+    border-radius: 5px; 
+    border: none;
+    background: #26a9e0; 
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    }
+    
+    
+    button:hover {
+    background: #85d6de;
+    }
+
+
+/* ........................................... */
+
+
+.popup{
+  height: 103%;
+  width: 100%;
+  visibility: hidden;
+  backdrop-filter: blur(35px);
+  overflow-y: scroll;
+  margin-left: 40%;
+  padding-top: 5%;
+}
+
+.open_popup{
+  visibility: visible;
+  margin-top: -4%;
+  transform: translate(-50%,-50%) scale(1);
+  position: fixed;
+
+}
+
+
+.form1 {
+  color: #fff;
+  position: absolute;
+  background-color: #4d6279;
+  margin-top: 5%;
+  margin-left: 25%;
+  float: right;
+  width: 50%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 2px 2px 0 #bbb;
+  padding: 1%; 
+}
+
+.form1 hr{
+  margin-left: 10px;
+  width: 95%;
+/* margin-top: 5%;
+margin-left: 30%;
+width: 50%;
+padding: 25px;
+background: rgba(54, 92, 114, 0.7); 
+box-shadow: 2px 2px 30px 18px rgb(0 0 0 / 41%); */
+
+}
+
+.form1 label{
+  margin-left: 20px;
+}
+
+.form1 table{
+  width: 100%;
+}
+
+.form1 tablefas td{
+  width: 10%;
+}
+
+.form1 table .second{
+  height: 65px;
+}
+.form1 table .second input{
+  width: 90%;
+  height: 35px;
+  overflow-y: auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+  margin-left: 10%;
+  color: #111;
+  }
+
+  .btns {
+    display: flex;
+    }
+    
+    .btns > div{
+  margin: 5%;
+  font-size: 30px;
+    }
+
+    .button1 {
+      width: auto;
+     height: 35px;
+     padding-left: 30%;
+     padding-right: 30%;
+     border-radius: 10px;
+     border: none;
+     font-size: medium;
+     font-weight: 500;
+     color: #fff;
+     margin-top: 5%;
+     margin-left: 20%;
+     transition: all 0.3s ease;
+   
+       /* padding: 10px 5px;
+     border-radius: 5px; 
+     border: none;
+     background: #26a9e0; 
+     text-decoration: none;
+     font-size: 15px;
+     font-weight: 400;
+     color: #fff;
+     width: 100%; */
+     }
+
+     #reg{
+      background-color: #08a308;
+  }
+  #cancel{
+    background-color: #FE0000;
+  }
+  
+  button:hover {
+    background: #85d6de;
+    }
+
+ 
+

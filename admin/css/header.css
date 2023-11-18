@@ -1,0 +1,90 @@
+
+body{
+    margin: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*header*/
+.top-bar{
+    background-color: #002B5B;
+    color: white;
+    display: flex;
+    height: 65px;
+    width: 100%;
+    font-size: 18px;
+    position: fixed;
+    z-index: 100;
+    
+}
+.logo-container{
+    background-color: white;
+    margin-left: 2%;
+    margin-top: 1px;
+    border-radius: 50%;
+    width: 4%;
+    height: 93%;
+    text-align: center;
+    cursor: pointer; 
+}
+.logo{
+    width: 80%;
+    margin-top: 6%;
+}
+.search-container{
+    margin-left: 35%;
+    margin-top: 1%;
+    width: 23%;
+}
+
+.search-form{
+    width: 100%;
+    background-color: #dddddd;
+    border-radius: 100px;
+    display: flex;
+    max-width: 300px;
+    color: #ffff;
+}
+
+.search-form input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding-left: 25px;
+    
+}
+.search-form button{
+    border: 0;
+    border-radius: 60px;
+    cursor: pointer;
+    background:  #dddddd;
+    width: 55px;
+    height: 35px;
+    color: #002B5B;
+}
+
+.icon-container{
+    margin-left: 17%;
+    margin-top: 1%;
+    
+}
+p{
+    margin: 0px;
+}
+
+.tbl{
+    background-color: #002B5B;
+    margin-left: 100px;
+}
+
+.tbl tr td{
+    margin: 0px;
+    width: 60px;
+    cursor: pointer;
+}
+#profile img{
+    top: 25%;
+    position: absolute;
+    height: 30px;
+    border-radius: 50%;
+}

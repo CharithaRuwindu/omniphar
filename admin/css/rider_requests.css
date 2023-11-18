@@ -1,0 +1,67 @@
+body{
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    --transition: all 0.2s ease;
+}
+
+.content{
+    margin-left: 78px;
+}
+
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    transition: var(--transition);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.div_chat{
+    margin-left: 60px;
+    margin-bottom: 40px;
+    
+}
+
+.chattble{
+    background-color: #eaeaeae4;
+    border-radius: 15px;
+    width: 91%;
+    box-shadow: 2px 2px #c7c7c7;
+    cursor: pointer;
+    
+}
+
+.chattble tr td{
+    width: 1000px;
+}
+
+.chatimg{
+    width: 60px;
+    padding-top: 2px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+.circlebtn{
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #127329;
+    margin-left: 1000px;
+    margin-right: 10px;
+}
+.td_name{
+    font-size: 18px;
+    width: 100%;
+}
+
+.div_upper{
+    padding-top: 120px;
+}

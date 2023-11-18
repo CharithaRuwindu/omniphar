@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body{
+    margin: 0%;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 65px;
+    left: 78px;
+    transition: var(--transition);
+    overflow-y: scroll;
+}
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    left: 250px;
+    transition: var(--transition);
+}
+.profile_img{
+    margin-left: 10%;
+    margin-top: 5%;
+    float: left;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 #bbb;
+    /* border: 5px solid black; */
+}
+.profile_img img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.topic{
+    float: left;
+    margin-top: 2%;
+    margin-left: 5%;
+    position: absolute;
+}
+.profile_info{
+    background-color: #dddddd;
+    margin-top: 5%;
+    margin-right: 15%;
+    float: right;
+    width: 50%;
+    height: 140%;
+    overflow: scroll;
+    border-radius: 0 50px 50px 50px;
+    box-shadow: 0 2px 2px 0 #bbb;
+}
+hr{
+    margin-left: 10px;
+    width: 95%;
+}
+.profile_info label{
+    margin-left: 20px;
+}
+
+.profile_info table{
+    width: 100%;
+}
+.profile_info table .second{
+    width: 20%;
+    height: 65px;
+}
+.profile_info table .first{
+    width: 6%;
+    height: 65px;
+}
+.second img{
+    width: 100px;
+}
