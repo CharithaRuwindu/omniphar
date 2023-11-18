@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body{
+    margin: 0%;
+}
+.content{
+    width: 100%;
+    height: 90%;
+    position: fixed;
+    top: 65px;
+    left: 78px;
+    transition: var(--transition);
+    overflow: scroll;
+}
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    left: 250px;
+    transition: var(--transition);
+}
+.topic{
+    float: left;
+    margin-top: 4%;
+    margin-left: 9%;
+    position: absolute;
+}
+.record{
+    margin-left: 10%;
+    border: 2px solid;
+    width: 80%;
+}
+
+/* div with main request details */
+.main_req{
+    margin-top: 10%;
+    margin-top: 10%;
+}
+.req_detail{
+    margin-left: 10%;
+}
+.req_detail td{
+    height: 30px;
+}
+
+/* action buttons */
+
+.status_btn{
+    margin: 3%;
+    margin-left: 10%;
+}
+.status_btn i{
+    margin-right: 10px;
+    font-size: 20px;
+    transform: translateY(3px);
+}
+.status_btn button{
+    border-radius: 50px;
+    border:none;
+    width:150px;
+    height: 35px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 2px 2px 2px 2px #cccc;
+}
+.status_btn button:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.req_accept{
+    margin-left: 30%;
+    background-color: rgb(2, 134, 28);
+}
+.req_accept:hover, .req_reject:hover{
+    transform: translateY(-6px);
+}
+.req_reject{
+    margin-left: 5%;
+    background-color: #DD1D28;
+}
+.accepted_req{
+    padding: 3px 3px;
+    margin-left: 40%;
+    background-color: rgb(2, 134, 28);
+    cursor: default !important;
+}
+.rejected_req{
+    padding: 3px 3px;
+    margin-left: 40%;
+    background-color: #DD1D28;
+    cursor: default !important;
+}
+
+/* sub topic */
+.sub_topic{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+/* div with topics */
+.req_read{
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    text-align: center;
+}
+.topics, .details{
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.details tr{
+    text-align: left;
+    padding-left: 10%;
+}
+.details tr:hover{
+    cursor: pointer;
+}
+.details button:hover{
+    cursor: pointer;
+}
+.details td{
+    padding-top: 6px;
+    width: 25%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    border: 2px solid white;
+}
+.topics th{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.details tr:nth-child(even) {
+    background-color: #c0dbeb;
+}
+.btn {
+    border-radius: 50px;
+    border:none;
+    width:120px;
+    color: white;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px 2px;
+}
+.btn:hover{
+    transform: translateY(-1px);
+    transition: all 0.4s ease;
+}
+#pending{
+    background-color: #2196F3;
+}
+#accepted{
+    background-color: rgb(2, 134, 28);
+}
+#rejected{
+    background-color: #DD1D28;
+}
+.proof{
+    width: 700px;
+}

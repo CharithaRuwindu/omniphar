@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  --color-hover: #002B5B;
+  --transition: all 0.2s ease;
+}
+
+.home {
+  position: fixed;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  height: 100vh;
+  margin-top: 65px;
+  background: #ffffff;
+  z-index: 6;
+  transition: var(--transition);
+  overflow-y: auto;
+}
+
+.home .body{
+
+  margin: 15px;
+}
+
+.main-container {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 5px 5px;
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title > p {
+  margin-bottom: 0%;
+  font-size: 20px;
+} 
+
+
+hr{
+  margin-top: 1px;
+}
+
+/*table--------------------------------------------------------------------*/
+
+.table1 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    overflow: scroll;
+    padding: 5px;
+    text-align: justify;
+  }
+  
+  .table1 th{
+    text-align: justify;
+    padding: 16px;
+  }
+
+  .table1 tr{
+    height: 50px;
+    overflow-y: scroll;
+    
+  }
+
+  .table1 tr:nth-child(even) {
+    background-color: #9ccce7;
+  }
+
+  .table1 td {
+    display: table-cell;
+    vertical-align: inherit;
+    padding-left: 15px;
+    text-align: justify;
+}
+
+  .button {
+    border-radius: 50px;
+    border:none;
+    width:90px;
+    background-color: #2196F3;
+    color: white;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background: rgb(5, 81, 180);
+  }
+
+  .button a:visited{
+    color: #ffffff;
+  
+  }
+  
+  .logo1{
+    float:left;
+    padding: 5px;
+     }
