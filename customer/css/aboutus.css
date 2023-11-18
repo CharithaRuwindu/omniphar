@@ -1,0 +1,44 @@
+body{
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    --transition: all 0.2s ease;
+}
+
+.content{
+    margin-left: 78px;
+}
+
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    transition: var(--transition);
+}
+
+
+.divtitle{
+    float: left;
+    margin-left: 5%;
+    margin-top: 6%;
+    
+}
+
+.para p{
+    position: absolute;
+    float: right;
+    margin-left: 25%;
+    margin-right: 30%;
+    padding: 2% 2% 25% 2%;
+    transform: translate(20%, -90%);
+    
+}
+.para img {
+    margin-left: 20%;
+    margin-top: 0%;
+    width: 50%;
+    height: 700px;
+    opacity: 0.35;
+    
+}

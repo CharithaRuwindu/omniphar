@@ -1,0 +1,91 @@
+body{
+    margin: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*footer*/
+footer{
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    background:  #002B5B;
+    color: #ffff;
+    margin-top: 45%;
+    margin-left:  78px;
+}
+
+a {
+    color: #ffff;
+}
+
+.fmain-content{
+    display: flex ;
+}
+
+.fmain-content .box {
+    flex-basis: 50%;
+    padding: 20px 130px;
+}
+
+.box h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.box .cont {
+    margin: 25px 0 0 0;
+    padding-bottom: 30px;
+}
+.left .cont .social a{
+    padding: 0 3.3px;
+}
+.left .cont .social a span{
+    height: 42px;
+    width: 42px;
+    background:#002B5B;
+    border: 0.5px solid #b2b1b1;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.left .cont .social a span:hover{
+    background:#eae9e9;
+    color: #002B5B;
+    
+}
+ 
+.text{
+    padding-left: 15px;
+    font-size: 18px;
+}
+.place{
+    margin-bottom: 15px;
+}
+
+.phone{
+    margin-bottom: 15px;
+}
+
+.footerlogo{
+    border-radius: 50%;
+    width: 45%;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.outer-footer{
+    background-color: rgb(189, 189, 189);
+    color: #002B5B;
+    font-size: 10px;
+    width: 100%;
+    height: 18px;
+    text-align: center;
+    padding-top: 0.5px;
+    padding-bottom: 8px;
+}
+

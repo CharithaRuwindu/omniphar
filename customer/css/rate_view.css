@@ -1,0 +1,26 @@
+body{
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    --transition: all 0.2s ease;
+}
+
+.content{
+    margin-left: 200px;
+    padding-top: 100px;
+}
+
+.sidebar.expand ~ .content {
+    width: calc(100% - 350px);
+    margin-left: 350px;
+    transition: var(--transition);
+}
+
+.review td {
+    width: 50%;
+}
+
+.stars{
+    font-size: 15px;}

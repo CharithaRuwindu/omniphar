@@ -1,0 +1,44 @@
+body{
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    width: 50px;
+    height: 40px;
+}
+
+.topic{
+    width: 50%;
+    height: 15%;
+    background-color: #F6F6F6;
+    margin-left:5% ;
+    padding: 3px 0px 3px 20px;
+    display: inline-flex;
+    box-shadow: 1px 1.5px #969595;
+}
+
+.topic2 {
+    width: 50%;
+    height: 45%;
+    background-color: #F6F6F6;
+    margin-left:5% ;
+    margin-top: 2%;
+    padding: 3px 0px 3px 20px;
+    display: inline-flex;
+    box-shadow: 1px 1.5px #969595;
+
+}
+/* .topic h2 {
+    padding-right: 80px;
+} */
+
+/* form {
+    width:700px;
+    height: 25%;
+    background-color: #F6F6F6;
+    margin-left:5% ;
+    /* padding: 20px 0px 3px 20px; */
+    /* display: inline-flex;
+    box-shadow: 1px 1.5px #969595;
+} */ */

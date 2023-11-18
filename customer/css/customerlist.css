@@ -1,0 +1,100 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.content{
+    margin-left: 78px;
+}
+
+.sidebar.expand ~ .content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    transition: var(--transition);
+}
+
+body{
+    font-family: Arial black;
+}
+
+.topicleft{
+    padding-left: 15px;
+    padding-bottom: 30px;
+}
+
+.topicright{
+    margin-left: 77%;
+    padding-bottom: 25px;
+}
+
+.topicleft h2{
+    padding-top:55px;
+}
+
+a {
+    text-decoration: none;
+    color: #050355;
+  }
+
+
+.middle{
+    width:100%;
+    float: left;
+    margin-left: 70px;
+    padding-top: 30px;
+}
+
+.btn_right{
+    width: 175px;
+    height: 40px;
+    background-color: #4DC0F1;
+    border-color: #4DC0F1;
+    border-radius: 15px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 1px 1px #4DC0F1;
+    font-family: Arial black;
+}
+
+
+.tbutton{
+    background-color:#050355;
+    color: #ffff;
+    height:60%;
+    width: 170px;
+    border: none;
+    border-radius:20px;
+    padding: 10px 32px;
+    font-size: 15px;
+    font-family: Arial black;
+    
+}
+.tbutton:hover{
+    background-color:#0f0e6f;
+    color:#ffffff;
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+.clist_tbl {
+    border: 10px solid white;
+    width: 90%;
+}
+
+.clist_tbl th, td {
+    padding:10px;
+    border-bottom: 10px solid #ffff;
+    text-align: left;
+}
+
+.clist_tbl td{
+    background-color: rgba(150, 212, 212, 0.4);
+    
+}
+
+.clist_tbl th{
+    background-color: rgba(86, 138, 175, 0.759);
+}
